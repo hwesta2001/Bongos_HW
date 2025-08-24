@@ -2,7 +2,7 @@
 ## Title: Bongos
 ## Notes: Movable bar framework
 ## Author: Tuller & Hwesta
-## Version: 6.10.29
+## Version: 6.10.30
 ## OptionalDeps: CT_BottomBar
 ## SavedVariablesPerCharacter: BongosSets
 ## SavedVariables: BongosProfiles
