@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: Bongos
 ## Notes: Movable bar framework
-## Author: Tuller
+## Author: Tuller & Hwesta
 ## Version: 6.10.29
 ## OptionalDeps: CT_BottomBar
 ## SavedVariablesPerCharacter: BongosSets
