@@ -48,7 +48,7 @@ local function OnXPEvent()
 		else
 			local value = UnitXP("player")
 			local max = UnitXPMax("player")
-			local rest = (GetXPExhaustion() / max * 100) or 0
+			local rest = 0
 
 			xpBar:SetMinMaxValues(0, max)
 			xpBar:SetValue(value)
@@ -56,10 +56,11 @@ local function OnXPEvent()
 			restBar:SetMinMaxValues(0, max)
 			if GetXPExhaustion() then
 				restBar:SetValue(value + GetXPExhaustion())
+				rest = math.floor((GetXPExhaustion() / max * 100))
 			else
 				restBar:SetValue(0)
 			end
-			text:SetText((max - value) .. " tnl - Rested: " .. math.floor(rest) .. "%")
+			text:SetText((max - value) .. " tnl - Rested: " .. rest .. "%")
 		end
 	end
 end
